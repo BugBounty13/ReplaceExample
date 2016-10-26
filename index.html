@@ -4,7 +4,7 @@
 var srcWindow = window.opener;
   
   srcWindow.onbeforeunload = function(e) {
-      document.write('test');
+      srcWindow.location.replace("http://www.google.com");
   };
   
   

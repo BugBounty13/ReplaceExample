@@ -4,7 +4,7 @@
 var srcWindow = window.opener;
   
   srcWindow.onbeforeunload = function(e) {
-      alert(1);
+      return "Are you sure to leave this page?";
   };
   
   

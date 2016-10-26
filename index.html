@@ -3,8 +3,11 @@
 <script> 
 var srcWindow = window.opener;
   
-
+  srcWindow.onbeforeunload = function(e) {
+      srcWindow.location.replace("http://www.google.com");
+  };
   
+  alert(1);
   
 srcWindow.location.replace('data:text/html;base64,PHNjcmlwdD5hbGVydChkb2N1bWVudC5kb21haW4pPC9zY3JpcHQ+');
 
